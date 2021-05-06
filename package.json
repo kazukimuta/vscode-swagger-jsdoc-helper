@@ -1,0 +1,25 @@
+{
+    "name": "vscode-swagger-jsdoc-helper",
+    "displayName": "vscode-swagger-jsdoc-helper",
+    "description": "Helper extension for swagger-jsdoc",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "javascript",
+            "aliases": ["javascript", "javascript"],
+            "extensions": [".js"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "javascript",
+            "scopeName": "source.swagger-jsdoc",
+            "path": "./syntaxes/swagger-jsdoc.tmLanguage.json"
+        }]
+    }
+}
